@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Recuperar Contraseña - PANDEA</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(to right, #000000, #1a1a80);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+      width: 90%;
+      max-width: 450px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 25px;
+      color: #ddd;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 30px;
+      border: 2px solid white;
+      background: black;
+      color: white;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+    }
+
+    button:hover {
+      background: white;
+      color: black;
+    }
+
+    a {
+      color: #8ab4ff;
+      text-decoration: none;
+      display: block;
+      margin-top: 20px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>¿Olvidaste tu contraseña?</h1>
+    <p>Ingresa tu correo electrónico y te enviaremos un enlace para recuperarla.</p>
+    <form>
+      <input type="email" placeholder="Correo electrónico" required>
+      <button type="submit">Enviar enlace</button>
+    </form>
+    <a href="Login.html">← Volver al inicio de sesión</a>
+  </div>
+</body>
+</html>

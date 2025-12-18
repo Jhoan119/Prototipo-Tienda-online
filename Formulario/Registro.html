@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro Vendedor - PANDEA</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .left-panel {
+      background: white;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left-panel img {
+      width: 550px;
+    }
+
+    .left-panel h1 {
+      font-size: 32px;
+      margin-top: 10px;
+      color: #000;
+    }
+
+    .right-panel {
+      flex: 1;
+      background: linear-gradient(to right, #000000, #1a1a80);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: black;
+      color: white;
+      border: 2px solid white;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: white;
+      color: black;
+    }
+
+    .extra-links {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .extra-links a {
+      color: #8ab4ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .extra-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <img src="logo.png" alt="Logo Pandea" />
+    </div>
+    <div class="right-panel">
+      <div class="form-container">
+        <h2>Crea tu cuenta como vendedor</h2>
+        <form>
+          <input type="text" placeholder="Nombre completo" required />
+          <input type="email" placeholder="Correo electrónico" required />
+          <input type="password" placeholder="Contraseña" required />
+          <input type="password" placeholder="Confirmar contraseña" required />
+          <input type="tel" placeholder="Teléfono" required />
+          <input type="text" placeholder="Nombre de la tienda" required />
+          <input type="text" placeholder="Dirección de la tienda" required />
+          <input type="text" placeholder="Categoría de productos" required />
+          <button type="submit">Registrarse</button>
+        </form>
+        <div class="extra-links">
+          <p>¿Ya tienes una cuenta? <a href="Login.html">Inicia sesión</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
